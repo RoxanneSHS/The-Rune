@@ -92,6 +92,9 @@ INTERJECT AMFaheed 4 TRAlternatekey
 ==AMFaheed IF ~OR(2)Global("TR_Assas","Global",2) Global("TR_HasRama","Global",7) Global("PlayerHasStronghold","GLOBAL",1)~ THEN~Majira and me are in trouble.~
 END
 IF~~THEN REPLY~Just tell me and we'll see if we can sort this out mutually.~GOTO Amkey1
+IF~~THEN REPLY~I have my own troubles and don't care about yours.~GOTO 5
+IF~~THEN REPLY~Yes, you are because I kill you for that key.~ GOTO 7
+
 
 
 APPEND AMFaheed
@@ -99,7 +102,7 @@ IF~~THEN BEGIN Amkey1
 SAY~Have you ever heard of a mage cabal called the Twisted Rune?~
 IF~~THEN REPLY~I have had some unpleasant encounters with them in the past.~GOTO Amkey2
 IF~Dead("HLVaxal")~THEN REPLY~I have destroyed one of their hideouts in Athkatla myself.~GOTO Amkey2
-IF~Dead("Tanthf01")~THEN REPLY~I have spoiled one or the murderous plans in Amn recently.~GOTO Amkey2
+IF~Dead("Tanthf01")~THEN REPLY~I have spoiled one of their murderous plans in Amn recently.~GOTO Amkey2
 END
 
 IF~~THEN BEGIN Amkey2
@@ -117,7 +120,7 @@ END
 
 IF~~THEN BEGIN Amkey4
 SAY~To make it short - we were discovered by the Rune's agents in our homeland and escaped at the last minute. Our friends advised us to seek a mighty protector and they pointed us to Tethir and the bhaalspawns.~
-=~However, when we arrived here we found most of them to be monstrosities except for Balthzar. There was no way for us to get to him though and in our dilemma we spent nearly all we had left to get this key. He must shelter us or we are lost.~
+=~However, when we arrived here we found most of them to be monstrosities except for Balthazar. There was no way for us to get to him though and in our dilemma we spent nearly all we had left to get this key. He must shelter us or we are lost.~
 IF~~THEN REPLY~It will be a risk for you to rely on Balthazar alone since you don't know his answer. I give you mine. I'm a bhaalspawn with my own stronghold in Amn, far from the outcome of this war here. You will be save there with your wife.~GOTO Amkey5
 IF~~THEN REPLY~Actually, I'd rather just kill you... lack of trust and all that.~ GOTO 7
 IF~~THEN REPLY~I can always look for another way into the castle. I'll just leave you alone.~GOTO Amkey7

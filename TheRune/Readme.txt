@@ -1,6 +1,6 @@
 Twisting With the Rune
 
-The Twisted Rune is a highly secret cabal of liches and other powerful undead spellcasters. The inner circle is unknown even to members and employs agents to do their bidding, most of whom are unaware that they work for the Rune. Since the Year of the Dracorage the Rune has become the most powerful organization in southwestern Faerun, with agents in every country south of the High Moor and west of the Storm Horn Mountains. (quoted from Forgotten Realms Wiki)
+The Twisted Rune is a highly secret cabal of liches and other powerful undead spellcasters. The inner circle is unknown even to members and employs agents to do their bidding, most of whom are unaware that they work for the Rune. Since the Year of the Dracorage the Rune has become the most powerful organization in southwestern Faerun, with agents in every country south of the High Moor and west of the Storm Horn Mountains. (from Forgotten Realms Wiki)
 
 In Baldur's Gate II: Shadows of Amn the protagonist can uncover a Twisted Rune hideout in the Bridge District. In this encounter the protagonist can kill Shangalar the Black and Shyressa, two Runemasters of the Twisted Rune. 
 
