@@ -13,7 +13,7 @@ END
 IF~~THEN BEGIN TR2
 SAY~What?...and who...who might you be to intrude here on such business? Ramazith knows that utmost discretion is required in these issues.~
 IF~~THEN REPLY~I'm <CHARNAME> and I'm not here on behalf of Ramazith. See in me the representative of the victims your operation has caused.~ GOTO TR3
-IF~~THEN REPLY~My name matters not, what matters is that Ramazith will not deliver anything to you anymore.~ GOTO TR3
+IF~~THEN REPLY~My name matters not, what matters is that Ramazith will not deliver anything to you any more.~ GOTO TR3
 IF~Dead("Ramazith")~THEN REPLY~Ramazith is dead.~ GOTO TR3
 END
 

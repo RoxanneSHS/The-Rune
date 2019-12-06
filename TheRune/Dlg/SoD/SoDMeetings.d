@@ -30,7 +30,7 @@ END
 
 CHAIN
 IF~~THEN TRGilb HavePap4
-~Fine. I'm referring to an assasin you killed on the Sword Coast. He had a report which listed seven names.~
+~Fine. I'm referring to an assassin you killed on the Sword Coast. He had a report which listed seven names.~
 ==TRFrenz~The names of the Runemasters...~
 ==TRGilb~Hush, it was really too early to take you on a mission like this. You talk too much.~
 END
@@ -62,7 +62,7 @@ IF~~THEN TRFrenz HavePap7
 ==TRGilb~Let us part cordially, <CHARNAME>, enough blood is shed in that matter.~DO~ ForceSpell(Myself,DRYAD_TELEPORT)~EXIT
 
 EXTEND_TOP BDTeleri 2 #2
-IF~Global("TR_HasRama","Global",6)~THEN REPLY~I see these very lifely statues all around, petrified people from what I can tell. Are you working for Oberan at Baldur's Gate as well?~GOTO Obera1
+IF~Global("TR_HasRama","Global",6)~THEN REPLY~I see these very lively statues all around, petrified people from what I can tell. Are you working for Oberan at Baldur's Gate as well?~GOTO Obera1
 END
 
 APPEND BDTeleri
