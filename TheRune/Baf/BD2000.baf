@@ -1,0 +1,12 @@
+IF
+Global("bd_khal_spawn","bd2000",1)
+Global("TR_Assas","Global",2)
+Global("TR_MeetCorm","BD2000",0)
+Delay(20)
+THEN
+RESPONSE #100
+SetGlobal("TR_MeetCorm","BD2000",1)
+CreateCreatureObjectDoor("TR_Gilb",Player1,0,0,0)
+CreateCreatureObjectDoor("TR_Frenz",Player2,0,0,0)
+END
+

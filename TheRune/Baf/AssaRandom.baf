@@ -1,0 +1,18 @@
+IF
+Global("TR_HasRama","Global",1)
+GlobalGT("TR_Petrihint","Global",1)
+Global("TR_Assas","Global",0)
+THEN
+RESPONSE #100
+SetGlobalTimer("RandomSpawn","MYAREA",FOUR_HOURS)
+SetGlobal("TR_Assas","Global",1)
+CreateCreature("TR_Assa",[469.735],4)
+END
+
+IF
+GlobalLT("TR_Assas","Global",2)
+PartyHasItem("trlett01")
+THEN
+RESPONSE #100
+SetGlobal("TR_Assas","Global",2)
+END

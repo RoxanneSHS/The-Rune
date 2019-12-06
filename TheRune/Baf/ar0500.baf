@@ -1,0 +1,11 @@
+IF
+Global("TR_HasRama","Global",7)
+Global("TR_MeetCorm","ar0500",0)
+Delay(20)
+THEN
+RESPONSE #100
+SetGlobal("TR_MeetCorm","ar0500",1)
+CreateCreatureObjectDoor("TR_Gilb2",Player1,0,0,0)
+CreateCreatureObjectDoor("TR_Fren2",Player2,0,0,0)
+END
+

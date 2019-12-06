@@ -1,0 +1,20 @@
+IF
+Global("TR_HasRama","Global",4)
+Global("TR_PlaceStuff","%CentralBaldursGate_OberonsEstate_L2%",0)
+THEN
+RESPONSE #100
+SetGlobal("TR_PlaceStuff","%CentralBaldursGate_OberonsEstate_L2%",1)
+ActionOverride("Container 2",CreateItem("trlett01",0,0,0))
+ActionOverride("Container 4",CreateItem("scrlpet",0,0,0))
+CreateCreature("TRnatina",[350.600],10)
+END
+
+IF
+Global("TR_HasRama","Global",5)
+Global("TR_Hostile","%CentralBaldursGate_OberonsEstate_L2%",0)
+THEN
+RESPONSE #100
+SetGlobal("TR_Hostile","%CentralBaldursGate_OberonsEstate_L2%",1)
+CreateCreature("Doomgu",[635.185],12)
+CreateCreature("Doomgu",[820.265],3)
+END

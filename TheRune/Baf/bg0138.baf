@@ -1,0 +1,15 @@
+IF
+Global("TR_HasRama","Global",2)
+THEN
+RESPONSE #100
+SetGlobal("TR_HasRama","Global",3)
+ActionOverride("Container 4",CreateItem("trlett04",0,0,0))
+END
+
+IF
+GlobalLT("TR_HasRama","Global",4)
+PartyHasItem("trlett04")
+THEN
+RESPONSE #100
+SetGlobal("TR_HasRama","Global",4)
+END

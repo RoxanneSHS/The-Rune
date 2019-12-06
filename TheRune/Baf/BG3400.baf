@@ -1,0 +1,14 @@
+IF
+Exists("UBCorian")
+THEN
+RESPONSE #100
+ActionOverride("UBCorian",DestroySelf())
+END
+
+IF
+Global("CorianExists","%Temple%",0)
+THEN
+RESPONSE #100
+SetGlobal("CorianExists","%Temple%",1)
+CreateCreature("corian",[4611.3449],2)
+END

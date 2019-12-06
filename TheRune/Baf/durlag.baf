@@ -1,0 +1,35 @@
+IF
+GlobalLT("TR_HasRama","Global",2)
+GlobalLT("TR_Petrihint","Global",10)
+Global("TRSilExists","%DurlagsTower%",0)
+OR(6)
+Gender(Player1,FEMALE)
+Gender(Player2,FEMALE)
+Gender(Player3,FEMALE)
+Gender(Player4,FEMALE)
+Gender(Player5,FEMALE)
+Gender(Player6,FEMALE)
+THEN
+RESPONSE #100
+SetGlobal("TRSilExists","%DurlagsTower%",1)
+CreateCreature("TR_Hold",[870.3625],W) 
+CreateCreature("TR_Basi",[1080.3725],W) 
+Continue()
+END
+
+IF
+Global("TR_HasRama","Global",0)
+PartyHasItem("trlett03")
+THEN
+RESPONSE #100
+SetGlobal("TR_HasRama","Global",1)
+END
+
+IF
+Global("TRSilExists","%DurlagsTower%",1)
+Dead("TR_Hold")
+THEN
+RESPONSE #100
+SetGlobal("TRSilExists","%DurlagsTower%",2)
+AddJournalEntry(@22,QUEST)
+END

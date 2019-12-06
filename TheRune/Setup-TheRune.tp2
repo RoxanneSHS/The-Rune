@@ -1,0 +1,138 @@
+BACKUP ~TheRune/backup~
+AUTHOR ~Roxanne~
+
+VERSION ~V0.1~
+
+ALWAYS
+ ACTION_IF GAME_IS ~bgee~ THEN BEGIN
+    INCLUDE ~TheRune/lib/bgee_vars.tpa~
+    END 
+    
+ ACTION_IF GAME_IS ~eet~ THEN BEGIN
+    INCLUDE ~EET/other/cpmvars/eet_cpmvars.tpa~
+    END
+END
+
+
+AUTO_TRA ~TheRune/tra/%s~
+LANGUAGE ~English~
+         ~English~
+         ~TheRune/tra/Setup-TheRune.tra~
+
+BEGIN ~Oberan's Secret~
+REQUIRE_PREDICATE GAME_IS ~bgee eet~ @10
+
+ADD_JOURNAL @02 @03 @08 @13 @15 @17 @22 USING ~TheRune/tra/Setup-TheRune.tra~
+
+COMPILE ~TheRune/dlg/BG1~ EVALUATE_BUFFER
+
+COPY ~TheRune/Bmp~ ~override~
+
+COPY ~TheRune/cre/Corian.CRE~ ~override~
+	SAY 0x8 @01
+	SAY 0xC @01
+COPY ~TheRune/cre/TR_Assa.CRE~ ~override~
+	SAY 0x8 @06
+	SAY 0xC @06
+COPY ~TheRune/cre/Corian.CRE~ ~override/TRNatina.cre~
+	SAY 0x8 @09
+	SAY 0xC @09
+WRITE_ASCII 0x34 ~Natinas~
+WRITE_ASCII 0x280 ~TRNatina~
+WRITE_ASCII 0x2cc ~TRNatina~
+COPY ~TheRune/cre/TR_Siri.CRE~ ~override~
+	SAY 0x8 @14
+	SAY 0xC @14
+COPY ~TheRune/cre/TR_BASI.CRE~ ~override~
+	SAY 0x8 @20
+	SAY 0xC @20
+COPY ~TheRune/cre/TR_Hold.CRE~ ~override~
+	SAY 0x8 @21
+	SAY 0xC @21
+	
+COPY_EXISTING ~Scrl2L.itm~ ~override/trlett01.itm~
+        SAY 0x50 @04
+COPY_EXISTING ~Scrl2L.itm~ ~override/trlett02.itm~
+        SAY 0x50 @05
+COPY_EXISTING ~Scrl2L.itm~ ~override/trlett03.itm~
+        SAY 0x50 @07
+COPY_EXISTING ~Scrl2L.itm~ ~override/trlett04.itm~
+        SAY 0x50 @16
+	
+ACTION_IF GAME_IS ~bgee~ THEN BEGIN
+COPY_EXISTING ~ar3400.ARE~ ~override~
+  WRITE_ASCII 0x94 ~AR3400~ #8
+  BUT_ONLY
+END
+
+COPY_EXISTING ~mutami.cre~ ~override~
+ADD_CRE_ITEM ~trlett03~ #0 #0 #0 ~IDENTIFIED~ ~inv12~
+COPY_EXISTING ~oberan.cre~ ~override~
+ADD_CRE_ITEM ~trlett02~ #0 #0 #0 ~IDENTIFIED~ ~inv11~
+ADD_CRE_ITEM ~Misc45~ #0 #0 #0 ~IDENTIFIED~ ~inv12~
+COPY_EXISTING ~narcil.cre~ ~override~
+ADD_CRE_ITEM ~trlett03~ #0 #0 #0 ~IDENTIFIED~ ~inv12~
+COPY_EXISTING ~ramazi.cre~ ~override~
+ADD_CRE_ITEM ~trlett04~ #0 #0 #0 ~IDENTIFIED~ ~inv11~
+	
+EXTEND_TOP ~%Temple_BCS%.bcs~ ~TheRune/baf/bg3400.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~%MutaminsGarden_BCS%.bcs~ ~TheRune/baf/bg3500.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~%ValleyoftheTombs_BCS%.bcs~ ~TheRune/baf/bg3500.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~%CentralBaldursGate_OberonsEstate_L2_BCS%.bcs~ ~TheRune/baf/bg0144.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~%CentralBaldursGate_OberonsEstate_L1_BCS%.bcs~ ~TheRune/baf/bg0143.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~%ShipwrecksCoast_BCS%.bcs~ ~TheRune/baf/bg3100.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~%NBaldursGate_RamazithsTower_L1_BCS%.bcs~ ~TheRune/baf/bg0138.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~%NBaldursGate_RamazithsTower_L6_BCS%.bcs~ ~TheRune/baf/bg0138.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~%Encounter_Plains1_BCS%.bcs~ ~TheRune/baf/AssaRandom.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~%Encounter_Plains2_BCS%.bcs~ ~TheRune/baf/AssaRandom.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~%Encounter_Grassland1_BCS%.bcs~ ~TheRune/baf/AssaRandom.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~%Encounter_Canyon1_BCS%.bcs~ ~TheRune/baf/AssaRandom.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~%Encounter_Forest1_BCS%.bcs~ ~TheRune/baf/AssaRandom.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~%DurlagsTower_BCS%.bcs~ ~TheRune/baf/durlag.baf~ EVALUATE_BUFFER
+
+
+BEGIN ~Dragonspear Rune~
+REQUIRE_PREDICATE GAME_IS ~bgee eet~ @11
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdcaelar.cre~ THEN BEGIN
+  FAIL  @11
+END
+
+COMPILE ~TheRune/dlg/SoD~
+
+COPY ~TheRune/cre/TR_Gilb.CRE~ ~override~
+	SAY 0x8 @18
+	SAY 0xC @18
+COPY ~TheRune/cre/TR_Frenz.CRE~ ~override~
+	SAY 0x8 @19
+	SAY 0xC @19
+
+EXTEND_TOP ~bd2000.bcs~ ~TheRune/baf/BD2000.baf~
+
+
+BEGIN ~Athkatla Rune~
+
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @12
+
+COMPILE ~TheRune/dlg/BG2~
+
+COPY ~TheRune/Bmp~ ~override~
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~trlett02.itm~ THEN BEGIN
+COPY_EXISTING ~Scrl2L.itm~ ~override/trlett02.itm~
+        SAY 0x50 @05
+END
+
+COPY ~TheRune/cre/TR_Gilb.CRE~ ~override/TR_Gilb2.CRE~
+	SAY 0x8 @18
+	SAY 0xC @18
+	WRITE_ASCII 0x2cc ~TRGilb2~
+COPY ~TheRune/cre/TR_Frenz.CRE~ ~override/TR_Fren2.CRE~
+	SAY 0x8 @19
+	SAY 0xC @19
+	WRITE_ASCII 0x2cc ~TRFrenz2~
+
+ACTION_IF GAME_IS ~bg2ee~ THEN BEGIN
+EXTEND_BOTTOM ~ar0602.bcs~ ~TheRune/baf/ar0602.baf~
+END
+
+EXTEND_BOTTOM ~ar0500.bcs~ ~TheRune/baf/ar0500.baf~

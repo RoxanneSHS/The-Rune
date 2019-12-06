@@ -1,0 +1,8 @@
+IF
+GlobalLT("TR_HasRama","Global",6)
+PartyHasItem("trlett02")
+THEN
+RESPONSE #100
+SetGlobal("TR_HasRama","Global",6)
+AddJournalEntry(@17,QUEST_DONE)
+END

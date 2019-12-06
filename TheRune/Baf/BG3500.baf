@@ -1,0 +1,7 @@
+IF
+Global("TR_HasRama","Global",0)
+PartyHasItem("trlett03")
+THEN
+RESPONSE #100
+SetGlobal("TR_HasRama","Global",1)
+END

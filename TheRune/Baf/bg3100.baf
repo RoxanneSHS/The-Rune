@@ -1,0 +1,9 @@
+IF
+GlobalLT("TR_Petrihint","Global",10)
+Global("TRSilExists","%ShipwrecksCoast%",0)
+THEN
+RESPONSE #100
+SetGlobal("TRSilExists","%ShipwrecksCoast%",1)
+CreateCreature("TR_Siri",[4691.2389],4)
+ActionOverride("Container 1",CreateItem("scrlpet",0,0,0))
+END
