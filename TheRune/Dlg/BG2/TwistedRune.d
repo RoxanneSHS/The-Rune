@@ -19,7 +19,7 @@ BEGIN TRFrenz2
 
 CHAIN
 IF~Global("TR_HasRama","Global",7)~THEN TRGilb2 Rune1
-~Congratulations, <CHARNAME>, I can't think of many who would have survived this encounter,~
+~Congratulations, <CHARNAME>, I can't think of many who would have survived this encounter.~
 DO~SetGlobal("TR_HasRama","Global",8)~
 ==TRFrenz2~Ever since our meeting at Boareskyr Bridge Gilbert was sure you would sooner or later pursue the Twisted Rune.~
 ==TRGilb2~Frenzek proposed to observe you, even if it took us some time to find your trace after you *vanished* from Baldur's Gate.~

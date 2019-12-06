@@ -1,6 +1,7 @@
 IF
 Global("TR_HasRama","Global",7)
 Global("TR_MeetCorm","ar0500",0)
+!AreaCheckObject("ar1008",Player1)
 Delay(20)
 THEN
 RESPONSE #100
