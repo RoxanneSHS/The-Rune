@@ -89,7 +89,7 @@ END
 END
 
 INTERJECT AMFaheed 4 TRAlternatekey
-==AMFaheed IF ~OR(2)Global("TR_Assas","Global",2) Global("TR_HasRama","Global",7) Global("PlayerHasStronghold","GLOBAL",1)~ THEN~Majira and me are in trouble.~
+==AMFaheed IF ~OR(2)Global("TR_Assas","Global",2) GlobalGT("TR_HasRama","Global",6) Global("PlayerHasStronghold","GLOBAL",1)~ THEN~Majira and me are in trouble.~
 END
 IF~~THEN REPLY~Just tell me and we'll see if we can sort this out mutually.~GOTO Amkey1
 IF~~THEN REPLY~I have my own troubles and don't care about yours.~GOTO 5
