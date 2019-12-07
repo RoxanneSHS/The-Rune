@@ -95,7 +95,9 @@ IF~~THEN REPLY~Just tell me and we'll see if we can sort this out mutually.~GOTO
 IF~~THEN REPLY~I have my own troubles and don't care about yours.~GOTO 5
 IF~~THEN REPLY~Yes, you are because I kill you for that key.~ GOTO 7
 
-
+EXTEND_BOTTOM AMFAheed 2
+IF~!Global("SaemonFaheed","GLOBAL",1) Global("ZakeeFaheed","GLOBAL",1) OR(2) Global("TR_Assas","Global",2) GlobalGT("TR_HasRama","Global",6) Global("PlayerHasStronghold","GLOBAL",1)~THEN REPLY~What I need is some key Zakee mentioned to open the way for entering Balthazar's fortress.~GOTO 3
+END
 
 APPEND AMFaheed
 IF~~THEN BEGIN Amkey1
@@ -110,7 +112,7 @@ SAY~By the gods, you hear that, Majira? There is hope for us after all.~
 =~You still live after an encounter with the Rune - I trust you for that alone.~
 =~We came from Calimshan which is a country controlled secretly in many parts by the Rune and their agents. Too few are those who work against them.~
 IF~~THEN REPLY~Go on, I'm listening.~ GOTO Amkey4
-IF~Global("TR_HasRama","Global",7) ~THEN REPLY~I have met Gilbert and Frenzek, probably friends of yours?~ GOTO Amkey3
+IF~GlobalGT("TR_HasRama","Global",6) ~THEN REPLY~I have met Gilbert and Frenzek, probably friends of yours?~ GOTO Amkey3
 END
 
 IF~~THEN BEGIN Amkey3
