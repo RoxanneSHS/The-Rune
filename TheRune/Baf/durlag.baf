@@ -31,5 +31,5 @@ Dead("TR_Hold")
 THEN
 RESPONSE #100
 SetGlobal("TRSilExists","%DurlagsTower%",2)
-AddJournalEntry(@22,QUEST)
+AddJournalEntry(@1022,QUEST)
 END

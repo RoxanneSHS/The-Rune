@@ -1,8 +1,8 @@
 @01 =~Corianna~
-@02 =~Basilisk Pets
+@1002 =~Basilisk Pets
 
 I have rescued the ranger Corianna from where she stood, petrified by a basilisk's gaze. The beast had been controlled by a mage. Although Corianna has no desire to meet them a second time, she has been kind enough to inform me that they were heading east...~
-@03 =~Basilisk Pets
+@1003 =~Basilisk Pets
 
 Young Tamah fell prey to a basilisk's petrifying gaze. I was happy to rescue her. The beast had been controlled by a mage whom she described as *professional*. Something sinister is going on here.~
 @04 =~Sir, our findings so far:
@@ -32,18 +32,18 @@ the master pays well for any of these artefacts that are required for his spells
 Take good care that whatever you deliver is shipped to my tower in Baldur's Gate without giving the scoundrel Ragefast the chance for prying.
 
 Your friend R.~
-@08 =~Basilisk Pets
+@1008 =~Basilisk Pets
 
 I have discovered a mage with some basilisks under his command. While he may have been the one who petrified some of the women I have freed there seems to be more to this story. He was obviously working for someone in Baldur's Gate, a man named R. who dwells in some tower in that town. He attacked us with his pets before I could interrogate him further.~
 @09 =~Natina~
 @10 =~This component is for BGEE or EET only~
 @11 =~This component requires SoD~
 @12 =~This component is for BG2EE or EET only~
-@13 =~Basilisk Pets
+@1013 =~Basilisk Pets
 
 I have rescued a sirine who was petrified by a basilisk's gaze. The beast had been controlled by a mage. We could not gain more information from her since she was hostile to all land folk and attacked us.~
 @14 =~Sirine~
-@15 =~Basilisk Pets
+@1015 =~Basilisk Pets
 
 We have discovered the man R who ordered the petrification of some young women we have found and rescued along the Sword Coast. It is the mage Ragefast in Baldur's Gate. He hired us to retrieve a nymph - a creature listed as "artefact" on the perverted shopping list we found on one of his agents. I hope to get more insight into his machinations and his associates before I confront him.~
 @16 =~Ramazith,
@@ -56,7 +56,7 @@ I have knowledge of a nymph that has been brought into the town by one of your c
 O.
 
 (Even though the writer does not give his name the expensive paper has a watermark. You have seen the family crest on a house north of the market place.)~
-@17 =~Basilisk Pets
+@1017 =~Basilisk Pets
 
 It seems that the spook of a mage's circle that tried to extract spell components from living creature including virgin girls and nymphs has been ended. A most respected citizen of Baldur's Gate was pulling the strings while those working for him were left in the dark about his intention.
 
@@ -65,9 +65,9 @@ The disturbing thing is that we found some evidence that even this man, Oberan, 
 @19 =~Frenzek~
 @20 =~Lesser Basilisk~
 @21 =~Holdar~
-@22 =~Basilisk Pets
+@1022 =~Basilisk Pets
 
-We met the mage Holdar with a basilisk under his command near Durlag's Tower. He was in search of a virgin and attempted to petrify us with the help of his beast. He was obviously working for someone in Baldur's Gate, a man named R. who dwells in some tower in that town. We Had to kill him, so unfortunately I could not interrogate him further.~
-@23 =~Balthazar and the Twisted Rune
+We met the mage Holdar with a basilisk under his command near Durlag's Tower. He was in search of a virgin and attempted to petrify us with the help of his beast. He was obviously working for someone in Baldur's Gate, a man named R. who dwells in some tower in that town. We had to kill him, so unfortunately I could not interrogate him further.~
+@1023 =~Balthazar and the Twisted Rune
 
-I found out very quickly that the rumoura about Balthazar's hiring of the Twisted Rune were nothing but...rumours. After all, I should have known best that this secret organisation would not hire out to anybody.~
+I found out very quickly that the rumours about Balthazar's hiring of the Twisted Rune were nothing but...rumours. After all, I should have known best that this secret organisation would not hire out to anybody.~

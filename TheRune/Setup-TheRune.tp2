@@ -1,7 +1,7 @@
 BACKUP ~TheRune/backup~
 AUTHOR ~Roxanne~
 
-VERSION ~V0.1~
+VERSION ~V0.3~
 
 ALWAYS
  ACTION_IF GAME_IS ~bgee~ THEN BEGIN
@@ -14,15 +14,19 @@ ALWAYS
 END
 
 
-AUTO_TRA ~TheRune/tra/%s~
+AUTO_TRA ~TheRune/%s~
 LANGUAGE ~English~
          ~English~
-         ~TheRune/tra/Setup-TheRune.tra~
+         ~TheRune/English/Setup-TheRune.tra~
+
+LANGUAGE ~Russian (Translated by Serdrick)~
+         ~Russian~
+         ~TheRune/Russian/Setup-TheRune.tra~
 
 BEGIN ~Oberan's Secret~
 REQUIRE_PREDICATE GAME_IS ~bgee eet~ @10
 
-ADD_JOURNAL @02 @03 @08 @13 @15 @17 @22 USING ~TheRune/tra/Setup-TheRune.tra~
+ADD_JOURNAL @1002 @1003 @1008 @1013 @1015 @1017 @1022 @1023 USING ~TheRune/%s/Setup-TheRune.tra~
 
 COMPILE ~TheRune/dlg/BG1~ EVALUATE_BUFFER
 

@@ -13,3 +13,5 @@ There is also some connection to Balthazar in ToB which appears in the original 
 The mod has no linear storyline, it is rather a puzzle where you find parts of the picture as you adventure through the game which may give you a vague idea of an organisation operating secretly in Faerun. The Rune has no interest in the bhaalspawn as such, the mod mainly provides some glue for events that originally appeared unrelated.
 
 Compatibility: The mod is compatible with the Cowled Menace mod that also expands the Twisted Rune topic.
+
+Russian translation was provided by Serdrick of Aerie.ru
