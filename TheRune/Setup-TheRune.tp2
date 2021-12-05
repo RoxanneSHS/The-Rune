@@ -1,7 +1,7 @@
 BACKUP ~TheRune/backup~
 AUTHOR ~Roxanne~
 
-VERSION ~V0.3~
+VERSION ~V0.4~
 
 ALWAYS
  ACTION_IF GAME_IS ~bgee~ THEN BEGIN
@@ -111,7 +111,7 @@ COPY ~TheRune/cre/TR_Frenz.CRE~ ~override~
 	SAY 0xC @19
 
 EXTEND_TOP ~bd2000.bcs~ ~TheRune/baf/BD2000.baf~
-
+EXTEND_TOP ~bd1000.bcs~ ~TheRune/baf/BD1000.baf~
 
 BEGIN ~Athkatla Rune~
 

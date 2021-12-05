@@ -1,0 +1,14 @@
+IF
+Global("BD_PET_MAIN","MYAREA",100)
+Global("TR_HasRama","Global",6)
+Global("TR_HasFled","BD1000",0)
+THEN
+RESPONSE #100
+SetGlobal("BD_PET_MAIN","MYAREA",3)
+SetGlobal("TR_HasFled","BD1000",1)
+SetGlobal("BD_PET_SAVED","MYAREA",0)
+CreateCreature("bdteleri",[425.479],SE)
+CreateCreature("bdpetsg",[580.513],SE)
+ChangeEnemyAlly("bdpetsg",NEUTRAL)  
+ActionOverride("bdpetsg",SaveLocation("LOCALS","goal",[855.3170]))
+END
