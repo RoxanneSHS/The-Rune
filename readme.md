@@ -26,7 +26,7 @@ The mod tries to make the existing encounter in SoA a bit more meaningful by pro
 <br>
 <br>
 Features:<br>
-- In EET you get a continuous story starting in BG1 and leading through SoD to SoA, however the mod can also be installed on the segregated game and may still make sense if you play the parts in the chronological sequence. (The BG2EE part simulates the player's knowledge he may have gained in earlier parts by letting him find an item among the inventory in the starting dungeon.)<br>
+ In EET you get a continuous story starting in BG1 and leading through SoD to SoA, however the mod can also be installed on the segregated game and may still make sense if you play the parts in the chronological sequence. (The BG2EE part simulates the player's knowledge he may have gained in earlier parts by letting him find an item among the inventory in the starting dungeon.)<br>
 There is also some connection to Balthazar in ToB which appears in the original game but was never explained there (requires to be stronghold owner to trigger).<br>
 The mod has no linear storyline, it is rather a puzzle where you find parts of the picture as you adventure through the game which may give you a vague idea of an organisation operating secretly in Faerun. The Rune has no interest in the bhaalspawn as such, the mod mainly provides some glue for events that originally appeared unrelated.<br>
 <br>
