@@ -124,7 +124,7 @@ END
 
 IF~~THEN BEGIN TRRama2
 SAY@45
-IF~~THEN DO~SetGlobal("RamazithMove","GLOBAL",3) SetGlobal("TR_HasRama","Global",2) Enemy()
+IF~~THEN DO~SetGlobal("RamazithMove","GLOBAL",4) SetGlobal("TR_HasRama","Global",2) Enemy()
 ForceSpell(Myself,QUICK_TELEPORT) EscapeAreaMove("%NBaldursGate_RamazithsTower_L6%",169,147,SSE)~EXIT
 END
 END
